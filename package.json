@@ -1,0 +1,19 @@
+{
+  "name": "puriy-cert",
+  "private": true,
+  "version": "1.1.0-beta.1",
+  "workspaces": [
+    "api",
+    "web"
+  ],
+  "scripts": {
+    "build": "npm run build -w api && npm run build -w web",
+    "dev:api": "npm run dev -w api",
+    "dev:web": "npm run dev -w web",
+    "check": "npm run check -w api && npm run check -w web",
+    "test": "npm run test -w api"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
